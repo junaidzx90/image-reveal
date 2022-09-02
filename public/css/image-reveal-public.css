@@ -1,0 +1,34 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .image_reveal {
+    margin-bottom: 20px;
+}
+ .rev_img {
+    width: 50%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    display: none;
+    border: 1px solid #ddd;
+    background-color: #303030;
+}
+.rev_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.rev_img.active{
+    display: block;
+}
+.reveal_images {
+    margin-bottom: 20px;
+}
+button.reveal_image_btn {
+    all: unset;
+    padding: 2px 15px;
+    background: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
